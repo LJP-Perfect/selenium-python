@@ -19,15 +19,15 @@
 
 程序默认使用Chorme 的webdriver
 
-![1544365497403](C:\Users\Lee\AppData\Local\Temp\1544365497403.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/chrome.png" alt="mole" style="max-width:100%;">
 
 如果要使用Firefox的webdriver配置如下图
 
-![1544365576221](C:\Users\Lee\AppData\Local\Temp\1544365576221.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/firefox.png" alt="mole" style="max-width:100%;">
 
 Safari的webdriver的对应配置没使用过，可以按下图试试看
 
-![1544365887636](C:\Users\Lee\AppData\Local\Temp\1544365887636.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/sarari.png" alt="mole" style="max-width:100%;">
 
 
 
@@ -53,24 +53,26 @@ to_who='Python宇宙第一'		 #见下第二种通知类型（选择第一种通�
 
 > 通知类型
 
-1. 普通弹框通知（简单，推荐）
+1. 普通弹框通知（简单，推荐）,代码中有两处相同代码
 
-![1544364861911](C:\Users\Lee\AppData\Local\Temp\1544364861911.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/change.png" alt="mole" style="max-width:100%;">
 
 弹框通知如图：
 
-![1544365017476](C:\Users\Lee\AppData\Local\Temp\1544365017476.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/common.png" alt="mole" style="max-width:100%;">
 
 2. ZB QQ对话框
 
 此变量为你**聊天对话框名（群聊名称或好友名）**如下图
 
-![]( https://f002.backblazeb2.com/file/freelee/image/one.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/one.png" alt="mole" style="max-width:100%;">
+
+
 
 且此**对话框必须单独存在**，不能如下图多个对话框开在一起，还有一点对话框不能**最小化**但是**可以被其他软件界面覆盖**。
 
-![1544363304978](C:\Users\Lee\AppData\Local\Temp\1544363304978.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/two.png" alt="mole" style="max-width:100%;">
 
 QQ通知如图：
 
-![1544365304079](C:\Users\Lee\AppData\Local\Temp\1544365304079.png)
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/qq.png" alt="mole" style="max-width:100%;">
