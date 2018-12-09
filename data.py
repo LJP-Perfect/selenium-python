@@ -14,7 +14,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 count = 0
-max=17
+max=18
 refreshtime=30
 def getHTMLText(url):
     time.sleep(refreshtime)
@@ -78,13 +78,18 @@ if __name__ == '__main__':
     window = tk.Tk()
     window.title('my window')
     window.geometry('400x200')
-
-    options = webdriver.Firefox()
+    #webdriver配置
+    #1、chrome
+    options = webdriver.ChromeOptions()
     options.add_argument('lang=zh_CN.UTF-8')
     options.add_argument(
         'user-agent="Mozilla/5.0 (iPod; U; CPU iPhone OS 2_1 like Mac OS X; ja-jp) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1 Mobile/5F137 Safari/525.20"')
-    driver = webdriver.Firefox(firefox_options=options)
-    driver=webdriver.Safari()
+    driver = webdriver.Chrome(chrome_options=options)
+    #2、firefox
+    ##driver = webdriver.Firefox()
+    #3、safari
+    ##webdriver.Safari()
+
     driver.minimize_window()
     length=0
     msg=''
@@ -96,7 +101,6 @@ if __name__ == '__main__':
             html = getHTMLText(url)  # 获取HTML
             tag = fillUnivlist(html)
             length=len(tag)
-
             if length==0:
                 zerocount+=1
             count+=1
@@ -105,7 +109,6 @@ if __name__ == '__main__':
             if count == 60 or zerocount==3:
                 driver.close()
                 time.sleep(3)
-
                 driver = webdriver.Chrome()
                 driver.minimize_window()
                 count=0
@@ -120,17 +123,17 @@ if __name__ == '__main__':
 
     if msg=="error":
         print("error")
-        #普通弹框
+        #1、普通弹框
         tk.Message(window,text="程序出错了，请重启",width=400).pack()
         window.mainloop()
-        #发送到qq窗口
-        #to_who = 'Python宇宙第一'
-        #send_qq(to_who, "程序出错了，请重启")
+        #2、发送到qq窗口
+        ##to_who = 'Python宇宙第一'
+        ##send_qq(to_who, "程序出错了，请重启")
     else:
         msg= soup.find_all('h2')
-        #普通弹框
+        #1、普通弹框
         tk.Message(window, text=str(msg), width=400).pack()
         window.mainloop()
-        #发送到qq窗口
-        #to_who = 'Python宇宙第一'
-        #send_qq(to_who, str(msg))
+        #2、发送到qq窗口
+        ##to_who = 'Python宇宙第一'
+        ##send_qq(to_who, str(msg))

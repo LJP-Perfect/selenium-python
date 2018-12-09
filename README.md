@@ -2,13 +2,13 @@
 
 此程序整合修改了一些demo，运行前的步骤有一点点复杂，程序运行后直到有Final Exams有更新题目才会停止运行。抓取到新题目后会根据选用的通知类型来通知你。（只需要下载data.py文件，images文件夹没什么用只是显示用）
 
-
+*注*：程序运行时偶尔会弹出一个框，会自动关闭的，好像是因为程序不够严谨，
 
 > 下载webdriver
 
 选择下面一种webdriver进行下载
 
-注：下载的driver类型，在你电脑上必须确认是否已安装对应的浏览器（推荐firefox）
+*注*：下载的driver类型，在你电脑上必须确认是否已安装对应的浏览器（推荐firefox）
 
 - firefox：https://github.com/mozilla/geckodriver/releases/tag/v0.23.0
 
@@ -17,17 +17,9 @@
 
 下载后将解压后的.exe文件放在环境变量Path里路径下（比如C:\Windows或C:\Windows\System32）
 
-程序默认使用Chorme 的webdriver
+程序默认使用Chorme 的webdriver，如果要切换其他的浏览器的webdriver，只需修改下图中的部分代码
 
-<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/chrome.png" alt="mole" style="max-width:100%;">
-
-如果要使用Firefox的webdriver配置如下图
-
-<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/firefox.png" alt="mole" style="max-width:100%;">
-
-Safari的webdriver的对应配置没使用过，可以按下图试试看
-
-<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/sarari.png" alt="mole" style="max-width:100%;">
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/config.png" alt="mole" style="max-width:100%;">
 
 
 
