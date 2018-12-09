@@ -4,6 +4,8 @@
 
 *注*：程序运行时偶尔会弹出一个框，会自动关闭的，好像是因为程序不够严谨，
 
+
+
 > 下载webdriver
 
 选择下面一种webdriver进行下载
@@ -19,7 +21,7 @@
 
 程序默认使用Chorme 的webdriver，如果要切换其他的浏览器的webdriver，只需修改下图中的部分代码
 
-<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/config.png" alt="mole" style="max-width:100%;">
+<img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/config.PNG" alt="mole" style="max-width:100%;">
 
 
 
