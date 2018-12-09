@@ -1,6 +1,6 @@
 # 运行前注意事项
 
-此程序运行前的步骤有一点点复杂，程序运行后直到有Final Exams有更新题目才会停止运行。抓取到新题目后会根据选用的通知类型来通知你。
+此程序整合修改了一些demo，运行前的步骤有一点点复杂，程序运行后直到有Final Exams有更新题目才会停止运行。抓取到新题目后会根据选用的通知类型来通知你。（只需要下载data.py文件，images文件夹没什么用只是显示用）
 
 
 
@@ -61,7 +61,7 @@ to_who='Python宇宙第一'		 #见下第二种通知类型（选择第一种通�
 
 <img src="https://github.com/LJP-Perfect/selenium-python/raw/master/images/common.png" alt="mole" style="max-width:100%;">
 
-2. ZB QQ对话框
+2. QQ对话框
 
 此变量为你**聊天对话框名（群聊名称或好友名）**如下图
 
